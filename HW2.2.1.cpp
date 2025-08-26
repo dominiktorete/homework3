@@ -19,55 +19,57 @@ int main(){
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     int number_of_mounth{};
-    
+    mounth moun;
     do{
-    std::cout << "Ââåäèòå íîìåð ìåñÿöà: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð¼ÐµÑÑÑ†Ð°: ";
     std::cin >> number_of_mounth;
-    switch(number_of_mounth){
-        case static_cast<int>(mounth::January) :
-            std::cout << "ßíâàðü"<< std::endl;
+    moun = static_cast<mounth>(number_of_mounth);
+    switch(moun){
+        case mounth::January :
+            std::cout << "Ð¯Ð½Ð²Ð°Ñ€ÑŒ"<< std::endl;
             break;
-        case static_cast<int>(mounth::February) :
-            std::cout << "Ôåâðàëü"<< std::endl;
+        case mounth::February :
+            std::cout << "Ð¤ÐµÐ²Ñ€Ð°Ð»ÑŒ"<< std::endl;
             break;  
-        case static_cast<int>(mounth::March) :
-            std::cout << "Ìàðò"<< std::endl;
+        case mounth::March :
+            std::cout << "ÐœÐ°Ñ€Ñ‚"<< std::endl;
             break;
-        case static_cast<int>(mounth::April) :
-            std::cout << "Àïðåëü"<< std::endl;
+        case mounth::April :
+            std::cout << "ÐÐ¿Ñ€ÐµÐ»ÑŒ"<< std::endl;
             break;
-        case static_cast<int>(mounth::May) :
-            std::cout << "Ìàé"<< std::endl;
+        case mounth::May :
+            std::cout << "ÐœÐ°Ð¹"<< std::endl;
             break;
-        case static_cast<int>(mounth::June) :
-            std::cout << "Èþíü"<< std::endl;
+        case mounth::June :
+            std::cout << "Ð˜ÑŽÐ½ÑŒ"<< std::endl;
             break;
-        case static_cast<int>(mounth::July) :
-            std::cout << "Èþëü"<< std::endl;
+        case mounth::July :
+            std::cout << "Ð˜ÑŽÐ»ÑŒ"<< std::endl;
             break;
-        case static_cast<int>(mounth::August) :
-            std::cout << "Àâãóñò"<< std::endl;
+        case mounth::August :
+            std::cout << "ÐÐ²Ð³ÑƒÑÑ‚"<< std::endl;
             break;
-        case static_cast<int>(mounth::September) :
-            std::cout << "Ñåíòÿáðü"<< std::endl;
+        case mounth::September :
+            std::cout << "Ð¡ÐµÐ½Ñ‚ÑÐ±Ñ€ÑŒ"<< std::endl;
             break;
-        case static_cast<int>(mounth::October) :
-            std::cout << "Îêòÿáðü"<< std::endl;
+        case mounth::October:
+            std::cout << "ÐžÐºÑ‚ÑÐ±Ñ€ÑŒ"<< std::endl;
             break;
-        case static_cast<int>(mounth::November) :
-            std::cout << "Íîÿáðü"<< std::endl;
+        case mounth::November :
+            std::cout << "ÐÐ¾ÑÐ±Ñ€ÑŒ"<< std::endl;
             break;
-        case static_cast<int>(mounth::December) :
-            std::cout << "Äåêàáðü"<< std::endl;
+        case mounth::December :
+            std::cout << "Ð”ÐµÐºÐ°Ð±Ñ€ÑŒ"<< std::endl;
             break; 
-        case static_cast<int>(mounth::Exit) :
-            std::cout << "Äî ñâèäàíèÿ!";
+        case mounth::Exit :
+            std::cout << "Ð”Ð¾ ÑÐ²Ð¸Ð´Ð°Ð½Ð¸Ñ!";
             break;
         default:
-            std::cout << "Íåâåðíûé íîìåð!" << std::endl;
+            std::cout << "ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð½Ð¾Ð¼ÐµÑ€!" << std::endl;
             break;
     }
-    }while(number_of_mounth != static_cast<int>(mounth::Exit));
+    }while(moun != mounth::Exit);
     
     return 0;
 }
+    
