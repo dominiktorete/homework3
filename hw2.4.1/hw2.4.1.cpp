@@ -67,6 +67,7 @@ public:
 		else std::cout << "file_in is not open" << std::endl;
 
 		std::ofstream file_out("out.txt");
+		file_out << count_addres << std::endl;
 		if(file_out.is_open()){
 			for(int i = vec.size()-1; i >= 0; i--){
 				file_out << vec[i].get_city() << ", " << vec[i].get_street() << ", " << vec[i].get_number_home() << ", " << vec[i].get_number_float() << std::endl;
@@ -82,6 +83,7 @@ public:
  *  Created on: 30 авг. 2025 г.
  *      Author: emec8
  */
+
 
 
 
