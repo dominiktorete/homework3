@@ -62,20 +62,20 @@ public:
 				a1.set_number_float(file_in);
 				vec.push_back(a1);
 			}
+			std::ofstream file_out("out.txt");
+			if(file_out.is_open()){
+				file_out << count_addres << std::endl;
+				for(int i = vec.size()-1; i >= 0; i--){
+					file_out << vec[i].get_city() << ", " << vec[i].get_street() << ", " << vec[i].get_number_home() << ", " << vec[i].get_number_float() << std::endl;
+				}
+			file_out.close();
 			file_in.close();
+			}
+			else std::cout << "file_out is not open" << std::endl;
 		}
 		else std::cout << "file_in is not open" << std::endl;
-
-		std::ofstream file_out("out.txt");
-		file_out << count_addres << std::endl;
-		if(file_out.is_open()){
-			for(int i = vec.size()-1; i >= 0; i--){
-				file_out << vec[i].get_city() << ", " << vec[i].get_street() << ", " << vec[i].get_number_home() << ", " << vec[i].get_number_float() << std::endl;
-			}
-			file_out.close();
-		}
-		else std::cout << "file_out is not open" << std::endl;
 	}
+
 
 /*
  * hw2.4.1.cpp
@@ -83,6 +83,7 @@ public:
  *  Created on: 30 авг. 2025 г.
  *      Author: emec8
  */
+
 
 
 
