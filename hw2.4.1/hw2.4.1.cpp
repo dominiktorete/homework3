@@ -65,7 +65,7 @@ public:
 			std::ofstream file_out("out.txt");
 			if(file_out.is_open()){
 				file_out << count_addres << std::endl;
-				for(int i = vec.size()-1; i >= 0; i--){
+				for(size_t i = vec.size()-1; i >= 0; i--){
 					file_out << vec[i].get_city() << ", " << vec[i].get_street() << ", " << vec[i].get_number_home() << ", " << vec[i].get_number_float() << std::endl;
 				}
 			file_out.close();
@@ -83,6 +83,7 @@ public:
  *  Created on: 30 авг. 2025 г.
  *      Author: emec8
  */
+
 
 
 
