@@ -1,40 +1,41 @@
-// #include <iostream>
-// #include <locale>
-// #include <Windows.h>
-// #include "math_func.h"
-// int main()
-// {
-//     setlocale(LC_ALL, "ru");
-//     SetConsoleCP(1251);
-//     SetConsoleOutputCP(1251);
-//     double a{}, b{};
-//     int command{};
-//     std::cout << "Ââåäèòå ïåðâîå ÷èñëî: ";
-//     std::cin >> a;
-//     std::cout << "Ââåäèòå âòîðîå ÷èñëî: ";
-//     std::cin >> b;
-//     std::cout << "Âûáåðèòå äåéñòâèå (1 - ñëîæåíèå, 2 - âû÷èòàíèå, 3 - óìíîæåíèå, 4 - äåëåíèå, 5 - âîçâåäåíèå â ñòåïåíü): ";
-//     std::cin >> command;
-//     switch(command){
-//     case 1:
-//         sum(a, b);
-//         break;
-//     case 2:
-//         subtract(a, b);
-//         break;
-//     case 3:
-//         multiply(a, b);
-//         break;
-//     case 4:
-//         divide(a, b);
-//         break;
-//     case 5:
-//         pow_h(a, b);
-//         break;
-//     default:
-//         std::cout << "Òàêîé êîìàíäû íå ñóùåñòâóåò!!!" << std::endl;
-//         break; // Íåîáÿçàòåëüíî.
-//     }
+#include <iostream>
+#include <locale>
+#include <Windows.h>
+#include "math_func.h"
+int main()
+{
+    setlocale(LC_ALL, "ru");
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    double a{}, b{};
+    int command{};
+    std::cout << "Ã‚Ã¢ÄºÃ¤ÄÅˆÄº ÄÄºÄ‘Ã¢Ã®Äº Ã·ÄÅ„Ã«Ã®: ";
+    std::cin >> a;
+    std::cout << "Ã‚Ã¢ÄºÃ¤ÄÅˆÄº Ã¢ÅˆÃ®Ä‘Ã®Äº Ã·ÄÅ„Ã«Ã®: ";
+    std::cin >> b;
+    std::cout << "Ã‚Å±Ã¡ÄºÄ‘ÄÅˆÄº Ã¤ÄºÃ©Å„ÅˆÃ¢ÄÄº (1 - Å„Ã«Ã®Ä‡ÄºÃ­ÄÄº, 2 - Ã¢Å±Ã·ÄÅˆÅ•Ã­ÄÄº, 3 - Ã³Ä›Ã­Ã®Ä‡ÄºÃ­ÄÄº, 4 - Ã¤ÄºÃ«ÄºÃ­ÄÄº, 5 - Ã¢Ã®Ã§Ã¢ÄºÃ¤ÄºÃ­ÄÄº Ã¢ Å„ÅˆÄºÄÄºÃ­Ã¼): ";
+    std::cin >> command;
+    switch(command){
+    case 1:
+        sum(a, b);
+        break;
+    case 2:
+        subtract(a, b);
+        break;
+    case 3:
+        multiply(a, b);
+        break;
+    case 4:
+        divide(a, b);
+        break;
+    case 5:
+        pow_h(a, b);
+        break;
+    default:
+        std::cout << "Å‡Å•Ä™Ã®Ã© Ä™Ã®Ä›Å•Ã­Ã¤Å± Ã­Äº Å„Ã³Å¯ÄºÅ„ÅˆÃ¢Ã³ÄºÅˆ!!!" << std::endl;
+        break; // ÃÄºÃ®Ã¡Ë™Ã§Å•ÅˆÄºÃ«Ã¼Ã­Ã®.
+    }
 
-//     return 0;
-// }
+    return 0;
+}
+
