@@ -1,0 +1,14 @@
+release/exceptfigure.o
+release/hw2.8.1.o
+release/hw2.8.2.o
+release/main.o
+release/parallelogram.o
+release/quadrangle.o
+release/rectangle.o
+release/romb.o
+release/shape.o
+release/square.o
+release/triangle.o
+release/triangleequal.o
+release/triangleisos.o
+release/triangllerect.o
