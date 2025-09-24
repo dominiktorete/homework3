@@ -1,0 +1,2 @@
+/usr/bin/llvm-ar-18 qc libGreeter.a CMakeFiles/Greeter.dir/greeter.cpp.o
+/usr/bin/llvm-ranlib-18 libGreeter.a

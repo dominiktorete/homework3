@@ -1,0 +1,8 @@
+/home/maximka/hw2_11_2/build/Desktop-Debug/CMakeFiles/hw2_11_2.dir
+/home/maximka/hw2_11_2/build/Desktop-Debug/CMakeFiles/Leaver.dir
+/home/maximka/hw2_11_2/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/maximka/hw2_11_2/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/maximka/hw2_11_2/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/maximka/hw2_11_2/build/Desktop-Debug/CMakeFiles/install.dir
+/home/maximka/hw2_11_2/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/maximka/hw2_11_2/build/Desktop-Debug/CMakeFiles/install/strip.dir

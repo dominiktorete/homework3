@@ -1,0 +1,1 @@
+/usr/bin/clang++-18 -fPIC -DQT_QML_DEBUG -g -shared -Wl,-soname,libLeaver.so -o libLeaver.so CMakeFiles/Leaver.dir/leaver.cpp.o 
