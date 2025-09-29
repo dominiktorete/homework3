@@ -1,1 +1,0 @@
-/usr/bin/clang++-18 -DQT_QML_DEBUG -g CMakeFiles/hw2_11_2.dir/main.cpp.o -o hw2_11_2  -Wl,-rpath,/home/maximka/hw2_11_2/build/Desktop-Debug: libLeaver.so 
